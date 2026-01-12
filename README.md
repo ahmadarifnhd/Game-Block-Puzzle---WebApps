@@ -1,4 +1,4 @@
-# block-puzzle
+# Block-Puzzle
 A block puzzle game made with JavaScript.
 
 # Screenshots
