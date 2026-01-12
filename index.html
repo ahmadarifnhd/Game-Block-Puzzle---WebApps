@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="icon" href="assets/general/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <title>Block Puzzle</title>
+
+</head>
+
+<body>
+
+    <div id="images"></div>
+
+    <div id="main">
+
+        <div id="start-screen" class="screen-overlay">
+            <div class="start-content">
+                <h1 class="game-title">
+                    <span class="letter" style="color: #FF6B6B;">B</span>
+                    <span class="letter" style="color: #FF8C42;">l</span>
+                    <span class="letter" style="color: #FFD93D;">o</span>
+                    <span class="letter" style="color: #6BCB77;">c</span>
+                    <span class="letter" style="color: #4D96FF;">k</span>
+                    <br class="title-break">
+                    <span class="letter" style="color: #FF6B9D;">P</span>
+                    <span class="letter" style="color: #C44569;">u</span>
+                    <span class="letter" style="color: #A8E6CF;">z</span>
+                    <span class="letter" style="color: #FFD3B6;">z</span>
+                    <span class="letter" style="color: #FFAAA5;">l</span>
+                    <span class="letter" style="color: #FF8B94;">e</span>
+                </h1>
+                <div class="creator-info">
+                    <p class="creator-label">Created by :</p>
+                    <p class="creator-name">Moch Fadly Yusuf Mahendra</p>
+                    <p class="creator-id">21562020056</p>
+                </div>
+                <div class="btn play-btn" id="play-btn">Play</div>
+            </div>
+        </div>
+
+        <div id="main-infobar">
+            <h2 id="score">Skor : 0</h2>
+            <div id="buttons-container">
+                <div class="btn bonus" id="random-btn">
+                    <div id="random-icon"></div>
+                    <div id="random-text"></div>
+                    <div class="info-bubble" id="random-bubble"></div>
+                </div>
+                <div class="btn" id="reset-btn">
+                    <div id="reset-btn-content">
+                        <div id="reset-icon"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="dialog">
+            <div id="end-box" class="dialog-box">
+                <h3>Tidak ada gerakan lagi!</h3>
+                <div class="btn confirm" id="tryagain-btn">Coba Kembali</div>
+            </div>
+            <div id="reset-box" class="dialog-box">
+                <h3>Apakah kamu yakin?</h3>
+                <div class="btn-wrapper">
+                    <div class="btn confirm" id="reset-confirm-btn">Ya, reset</div>
+                    <div class="btn cancel" id="reset-cancel-btn">Tidak, Kembali</div>
+                </div>
+            </div>
+        </div>
+
+        <canvas id="render_canvas" tabindex="0"></canvas>
+
+    </div>
+
+    <script src="js/canvas.js"></script>
+    <script src="js/default_objects.js"></script>
+    <script src="js/objects.js"></script>
+    <script src="js/mouse_detection.js"></script>
+    <script src="js/render.js"></script>
+    <script src="js/tiles.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/animation.js"></script>
+    <script src="js/game_logic.js"></script>
+    <script src="js/save.js"></script>
+    <script src="js/ui.js"></script>
+
+</body>
+
+</html>
